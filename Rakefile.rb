@@ -1,5 +1,5 @@
 task :default => 'jekyll'
 
 task :jekyll do
-  sh 'jekyll --lsi'
+  sh 'jekyll --lsi --permalink none'
 end

@@ -1,0 +1,5 @@
+^Capfile$
+^Rakefile\.rb$
+^config\.yml$
+^#.*#$
+^.*~$
