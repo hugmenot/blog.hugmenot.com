@@ -12,6 +12,18 @@ default_run_options[:pty] = true
 role :web, 'blog.hugmenot.com'
  
 namespace :deploy do
+  task :restart do
+  end
+ 
+  task :start do
+  end
+ 
+  task :stop do
+  end
+  
+  task :finalize_update do
+  end
+
   desc 'Generates the site with Jekyll'
   task :generate do
     run "cd #{current_release} && rake jekyll"
