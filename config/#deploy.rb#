@@ -1,0 +1,10 @@
+default_run_options[:pty] = true
+set :repository, 'git@github.com:hugmenot/blog.hugmenot.com.git'
+set :scm, 'git'
+set :user, 'deployer'
+
+role :web, 'localhost'
+
+task :git_pull_web do
+   run "ls ."
+end
