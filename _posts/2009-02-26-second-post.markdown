@@ -3,7 +3,4 @@ layout: post
 title: Testing Pushr
 ---
 
-This post should be automatically published when I push this to github!
-
-Attempt 2.
-Attempt 3.
+This post should trigger an update on Twitter!
