@@ -4,7 +4,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-IE" lang="en-IE">
   <head>
     <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
-    <title>{{ page.title }}</title>
+    <title>Welcome to 'blog.hugmenot.com'</title>
     <meta name="author" content="hugmenot"/>
     <link rel="home" title="Home" href="http://blog.hugmenot.com"/>
     <link rel="alternate" title="Hugmenot" href="" type="application/atom+xml"/>
@@ -30,12 +30,13 @@
         </div>
 
         <div class="section clearfix">
-          <div class="time">{{ site.posts.first.date | distance_of_time_in_words_to_now }}</div>
-          <h1><a href="#current">{{ site.posts.first.title }}</a></h1>
+          <h2>8 days ago</h2>
+          <h1>Testing Pushr</h1>
           <p>
-            {{ site.posts.first.content | first_paragraph }}
+            
+
           </p>
-          <h3><a href="#current">read full article</a></h3>
+          <h3><a href="/2009/02/26/second-post">read full article</a></h3>
         </div>
       </div>
     </div>
@@ -52,7 +53,7 @@
               Meep meep
             </div>
 
-            <div id="twitter_div" class="section clearfix">
+            <div id="twitter_div" class="section">
               <ul id="twitter_update_list"></ul>
               <a href="http://twitter.com/hug_me_not" id="twitter-link" style="display:block;text-align:right;">follow us on Twitter</a>
             </div>
@@ -62,7 +63,24 @@
         
         <div class="article">
           <div>
-            {{ content }}
+            <div class="section">
+  <span>22 Feb 2009</span> &raquo; <a href="/2009/02/22/first-post">Welcome to 'blog.hugmenot.com'</a>
+
+  <p>blog.hugmenot.com is going to be an awesome project.</p>
+
+  <div>
+    <h2>Related Posts</h2>
+    <ul>
+      
+        <li><span>22 Feb 2009</span> &raquo; <a href="/2009/02/22/first-post">Welcome to 'blog.hugmenot.com'</a></li>
+      
+        <li><span>16 Feb 2009</span> &raquo; <a href="/2009/02/16/test-post-3">Test post 3</a></li>
+      
+        <li><span>17 Feb 2009</span> &raquo; <a href="/2009/02/17/test-post-4">Test post 4</a></li>
+      
+    </ul>
+  </div>
+</div>
           </div>
           <span></span>
         </div>
@@ -71,17 +89,11 @@
 
     <div class="footer">
       <div class="container">
-        <ul class="clearfix">
-          <li>Contact us at <a href="mailto:info@luby-rang.org" title="Email us">info@luby-rang.org</a></li>
+        <ul>
+          <li>Email: <a href="mailto:info@luby-rang.org" title="Email">info@luby-rang.org</a></li>
           <li>Original artwork by <a href="kittyaisha.deviantart.com" title="Kitty Aisha">Kitty-Aisha</a></li>
           <li>Copyright &copy; 2009</li>
         </ul>
-        <blockquote>
-          <span><a href="http://validator.w3.org/check?uri=referer" title="Validate XHTML">XHTML</a></span>
-          <span>Is valid. Screw you IE.</span>
-          <span><a href="jigsaw.w3.org/css-validator/check/referer" title="Validate CSS">CSS</a> is too.</span>
-          <cite>&#8212; Haiku #53</cite>
-        </blockquote>
       </div>
     </div>
 

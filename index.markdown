@@ -2,13 +2,29 @@
 layout: default
 title: blog.hugmenot.com
 ---
-
-This project <a href="http://blog.hugmenot.com">blog.hugmenot.com</a> is awesome.
-
-To enable Disqus comments + badges for this site, [add it to your Disqus account](http://disqus.com/add/).
-
-<ul class="posts">
-  {% for post in site.posts %}
-    <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
-  {% endfor %}
-</ul>
+{% for post in site.posts %}
+  <div class="section
+              clearfix
+              {% if forloop.first %} first {% endif %}
+              {% if forloop.index0 < 3 %}
+                 full
+              {% else %}
+                 {% if forloop.index0 < 6 %}
+                    preview
+                 {% else %}
+                    title-only
+                 {% endif %}
+              {% endif %}
+             ">
+    <h1><a href="{{ post.url }}" {% if forloop.first %} name="current" {% endif %}>{{ post.title }}</a></h1>
+    <div class="time">{{ post.date | date_to_string }}</div>
+    {% if forloop.index0 < 3 %}
+      {{ post.content }}
+    {% else %}
+      {% if forloop.index0 < 6 %}
+        {{ post.content | first_paragraph }}
+        <h2><a href="{{ post.url }}">Read full article</a></h2>
+      {% endif %}
+    {% endif %}
+  </div>
+{% endfor %}
